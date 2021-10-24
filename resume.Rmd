@@ -71,7 +71,7 @@ build_skill_bars(skills)
 ```
 
 ::: aside
-<p style="font-family: calibri; font-size:11pt; font-style:italic">"I have extensive experience in client-facing roles and on projects that directly impact health in resource-limited settings." </p>
+<p style="font-family: calibri; font-size:11pt; font-style:italic">"I have extensive experience in supporting national programs and on projects that directly impact health in resource-limited settings." </p>
 :::
 
 <!-- Open Source Contributions {#open-source} -->
@@ -105,10 +105,9 @@ Ifeoma Ozodiegwu {#title}
 cat(sanitize_links(intro_text))
 ```
 
-Selected Positions {data-icon=suitcase}
+
+Positions {data-icon=suitcase}
 --------------------------------------------------------------------------------
-
-
 
 ```{r}
 position_data %>% print_section('positions')
@@ -116,16 +115,15 @@ position_data %>% print_section('positions')
 
 
 
-Education {data-icon=graduation-cap data-concise=true}
+Other Positions {data-icon=suitcase}
 --------------------------------------------------------------------------------
 
 ```{r}
-position_data %>% print_section('education')
+print_section(position_data, 'writings')
 ```
 
 
-
-Selected Talks & Publications   {data-icon=book}
+Talks, Publications, & Working Papers   {data-icon=book}
 --------------------------------------------------------------------------------
 ::: aside
 <p style="font-family: calibri; font-size:11pt; font-style:italic">"I am passionate about data-driven decision-making. In many resource-poor settings, primary data is not readily available. My expertise lies in applying quantitative methods to make the best decisions with secondary data." </p>
@@ -141,4 +139,13 @@ Selected Press (About)  {data-icon=newspaper}
 
 ```{r}
 print_section(position_data, 'about_me_press')
+```
+
+
+
+Education {data-icon=graduation-cap data-concise=true}
+--------------------------------------------------------------------------------
+
+```{r}
+position_data %>% print_section('education')
 ```
